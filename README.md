@@ -13,7 +13,7 @@ npm run build      # production build in dist/
 ## Edit content
 
 Everything (text, jobs, projects, skills, links) is in `src/data.ts`.
-Replace `public/resume.pdf` whenever you update your resume.
+Replace `public/Sapa_Kiran_Kumar_Reddy_Resume.pdf` whenever you update your resume, and bump the `?v=` date on `resume` in `src/data.ts`.
 
 ## Deploy free
 

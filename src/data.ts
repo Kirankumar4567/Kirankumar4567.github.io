@@ -13,7 +13,8 @@ export const profile = {
   phone: "+91 93901 68818",
   github: "https://github.com/Kirankumar4567",
   linkedin: "https://www.linkedin.com/in/kiran-kumar-reddy-sapa-12762b24b/",
-  resume: "/resume.pdf",
+  // Bump ?v= whenever you replace the PDF so browsers fetch the new one.
+  resume: "/Sapa_Kiran_Kumar_Reddy_Resume.pdf?v=2026-10-24",
   photo: "/kiran.jpg",
   // Hero text. The `highlight` part is shown in bright white.
   subtitle: { before: "Software Engineer building production backends with ", highlight: "2 years", after: " of experience" },
