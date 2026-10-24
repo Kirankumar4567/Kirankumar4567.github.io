@@ -158,3 +158,4 @@ export const education = {
   period: "2020 – 2024",
   achievements: ["JEE Main 2020: All India Rank 1724", "Specialist, Coding Ninjas", "Additional Secretary, NITW Sports Club"],
 };
+
