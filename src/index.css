@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* Dark mode follows the .dark class on <html> (toggle in the nav) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Light */
+  --color-bg: #ffffff;
+  --color-fg: #0a0a0a;
+  --color-card: #ffffff;
+  --color-muted: #6b6b6b;
+  --color-line: #e5e5e5;
+  --color-soft: #f4f4f5;
+
+  /* Dark */
+  --color-bg-dark: #0a0a0a;
+  --color-fg-dark: #fafafa;
+  --color-card-dark: #111111;
+  --color-muted-dark: #a1a1a1;
+  --color-line-dark: #262626;
+  --color-soft-dark: #1c1c1c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-bg text-fg font-sans antialiased dark:bg-bg-dark dark:text-fg-dark;
+}
+
+::selection {
+  @apply bg-fg text-bg dark:bg-fg-dark dark:text-bg-dark;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
